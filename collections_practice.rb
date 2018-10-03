@@ -17,8 +17,8 @@ def remove_non_strings (array)
   array.delete_if {|value| value.class != String }
 end
 
-#def count_elements(array)
-  #hash = {}
-  #repeat = hash
-  #array.collect {|element| element.}
-#end
+def count_elements(array)
+  hash = {}
+  repeat = hash
+  array.collect {|element| element.}
+end
