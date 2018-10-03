@@ -12,3 +12,7 @@ def first_wa(array)
     word[0..1] == "wa"
   end
 end
+
+def remove_non_strings (array)
+  
+end
