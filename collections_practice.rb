@@ -20,5 +20,5 @@ end
 def count_elements(array)
   hash = {}
   repeat = hash
-  array.collect {|element| element.}
+  array.collect {|element| repeat[element]+= 1}
 end
