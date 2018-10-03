@@ -4,6 +4,6 @@ end
 
 def contain_a(array)
   contain = []
-  array.any? {|a| "a"}
-
+  contain << array.any? {|a| "a"}
+  contain
 end
