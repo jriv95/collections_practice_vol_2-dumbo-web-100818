@@ -1,3 +1,3 @@
 def begins_with_r(array)
-  array.include? {|r| "r"}
+  array.any? {|r| "r"}
 end
