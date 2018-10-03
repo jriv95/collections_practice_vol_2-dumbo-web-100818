@@ -4,4 +4,5 @@ end
 
 def contain_a(array)
   array.include? {|a| "a"}
+  array
 end
