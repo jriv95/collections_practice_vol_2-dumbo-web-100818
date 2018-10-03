@@ -18,7 +18,7 @@ def remove_non_strings (array)
 end
 
 def count_elements(array)
-  repeat = hash.New(0)
+  repeat = hash.new(0)
   array.collect {|element| repeat[element]+= 1}
   repeat.collect do |hash, number|
       hash[:repeat] = number
