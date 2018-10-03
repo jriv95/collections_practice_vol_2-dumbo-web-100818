@@ -18,7 +18,7 @@ def remove_non_strings (array)
 end
 
 #def count_elements(array)
-  hash = {}
-  repeat = hash
-  array.collect {|element| element.}
-end
+  #hash = {}
+  #repeat = hash
+  #array.collect {|element| element.}
+#end
