@@ -1,3 +1,4 @@
 def begins_with_r(array)
-  array.any? {|r| "r"}
+  array.start_with? {|r| "r"}
+  array.
 end
