@@ -38,4 +38,3 @@ def count_elements(array)
   array_w_count << prev.merge(:count => count)
   array_w_count
 end
-end
