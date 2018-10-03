@@ -14,5 +14,5 @@ def first_wa(array)
 end
 
 def remove_non_strings (array)
-  array.delete_if {|value| value.class != string }
+  array.delete_if {|value| value.class != String }
 end
