@@ -24,4 +24,5 @@ def count_elements(array)
   repeat.collect do |hash, number|
       hash[:repeat] = number
     end
+    repeat.keys
 end
