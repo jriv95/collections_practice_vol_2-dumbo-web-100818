@@ -9,4 +9,5 @@ end
 def first_wa(array)
   array.find do |word|
     word[0..1] == "wa"
+  end
 end
