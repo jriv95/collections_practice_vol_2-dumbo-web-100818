@@ -18,10 +18,24 @@ def remove_non_strings (array)
 end
 
 def count_elements(array)
-  repeat = hash.new(0)
-  array.collect {|element| repeat[element]+= 1}
-  repeat.collect do |hash, number|
-      hash[:repeat] = number
+  array.sort_by do |hash|
+    hash[:name]
+  end
+
+  array_w_count = []
+  count = 1;
+  prev = array[0]
+
+  for i in 1..(array.size-1)
+    if(array[i] == prev)
+        count += 1
+    else
+      array_w_count << prev.merge({:count => count})
+      prev = array[i]
+      count = 1
     end
-    repeat.keys
+  end
+  array_w_count << prev.merge(:count => count)
+  array_w_count
+end
 end
