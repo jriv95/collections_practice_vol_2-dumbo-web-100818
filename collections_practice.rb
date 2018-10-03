@@ -21,4 +21,7 @@ def count_elements(array)
   hash = {}
   repeat = hash
   array.collect {|element| repeat[element]+= 1}
+  repeat.collect do |hash, number|
+      hash[:repeat] = number
+    end
 end
