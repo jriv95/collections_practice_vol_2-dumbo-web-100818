@@ -5,3 +5,8 @@ end
 def contain_a(array)
   array.select {|word| word.include?("a")}
 end
+
+def first_wa(array)
+  array.find do |word|
+    word[0..1] == 0
+end
